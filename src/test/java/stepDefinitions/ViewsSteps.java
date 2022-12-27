@@ -96,6 +96,7 @@ public class ViewsSteps extends ReusableMethods {
 
     @And("kullanici {string} button tiklasin")
     public void kullaniciButtonTiklasin(String text) {
+
         scrollWithUiScrollable(text);
     }
 }

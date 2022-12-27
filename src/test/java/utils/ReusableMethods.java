@@ -60,11 +60,14 @@ public class ReusableMethods {
         element.click();
     }
 
+    //textbox a sendkeys methodu
+
     public static void enterText(MobileElement element, String text) {
         waitToBeClickable(element, 10);
         element.sendKeys(text);
     }
 
+    //textbox i once clear yap sonra metin gonder
     public static void enterText(MobileElement element, String text, boolean needClear) {
         waitToBeClickable(element, 10);
         if (needClear) {
